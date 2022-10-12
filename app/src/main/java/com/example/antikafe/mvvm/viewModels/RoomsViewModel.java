@@ -5,6 +5,7 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import com.example.antikafe.DI.ServiceLocator;
 import com.example.antikafe.mvvm.models.Rooms;
@@ -15,6 +16,7 @@ import java.util.List;
 public class RoomsViewModel extends AndroidViewModel {
 
     private RoomsRepository mRepository;
+    private MutableLiveData<String> roomsList = new MutableLiveData<>("");
     private LiveData<List<Rooms>> mRooms;
 
     public RoomsViewModel(@NonNull Application application) {
@@ -27,4 +29,6 @@ public class RoomsViewModel extends AndroidViewModel {
     public LiveData<List<Rooms>> getRooms(){
         return mRooms;
     }
+
+    public MutableLiveData<String> getRoomsList(){return roomsList;}
 }

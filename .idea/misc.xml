@@ -5,8 +5,9 @@
       <map>
         <entry key="..\:/Users/hafyo/Desktop/Antikafe/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/hafyo/Desktop/Antikafe/app/src/main/res/layout/activity_rooms_fragment.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/hafyo/Desktop/Antikafe/app/src/main/res/layout/fragment_rooms.xml" value="0.2" />
+        <entry key="..\:/Users/hafyo/Desktop/Antikafe/app/src/main/res/layout/fragment_rooms.xml" value="0.264" />
         <entry key="..\:/Users/hafyo/Desktop/Antikafe/app/src/main/res/layout/fragment_rooms_list.xml" value="0.11651469098277609" />
+        <entry key="..\:/Users/hafyo/Desktop/Antikafe/app/src/main/res/layout/room_element.xml" value="0.264" />
       </map>
     </option>
   </component>

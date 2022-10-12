@@ -28,6 +28,7 @@ public class ServiceLocator {
 
     public static void init (Context context){
         serviceLocator = new ServiceLocator(context);
+        //Toast.makeText(context, ServiceLocator.getInstance().mRoomsRepository.toString(), Toast.LENGTH_LONG).show();
     }
 
     public RoomsRepository getRepository() {

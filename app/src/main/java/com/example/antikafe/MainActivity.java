@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.antikafe.DI.ServiceLocator;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //ServiceLocator.init(getApplicationContext());
+        ServiceLocator.init(getApplicationContext());
 
     }
 

@@ -11,7 +11,6 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import com.example.antikafe.Database.Dao.RoomsDao;
 import com.example.antikafe.mvvm.models.Rooms;
 
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -53,6 +52,7 @@ public abstract class RoomsDatabase extends RoomDatabase {
                 }
             }
         }
+        //Toast.makeText(context, rooms.toString(), Toast.LENGTH_LONG).show();
         return instance;
     }
 
