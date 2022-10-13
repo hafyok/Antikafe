@@ -20,6 +20,10 @@ public class RoomsRepository {
         RoomsDatabase db = RoomsDatabase.getDatabase(context);
         mRoomsDao = db.roomSDAO();
         mAllRoomS = mRoomsDao.getAll();
+
+        /*Toast.makeText(context, mAllRoomS.toString(), Toast.LENGTH_LONG).show();
+        Toast.makeText(context, "Проверка", Toast.LENGTH_LONG).show();*/
+
     }
 
     public LiveData<List<Rooms>> getAllRoomS() {

@@ -19,7 +19,10 @@ public abstract class RoomsDatabase extends RoomDatabase {
 
     private static final Rooms[] rooms = {
             new Rooms("Комната отдыха"),
-            new Rooms("Коворкинг")
+            new Rooms("Коворкинг"),
+            new Rooms(":KJ:LKJkjhdfg"),
+            new Rooms(";sfkdjg"),
+            new Rooms("erwiumndc")
     };
 
     public abstract RoomsDao roomSDAO();
@@ -52,7 +55,6 @@ public abstract class RoomsDatabase extends RoomDatabase {
                 }
             }
         }
-        //Toast.makeText(context, rooms.toString(), Toast.LENGTH_LONG).show();
         return instance;
     }
 
