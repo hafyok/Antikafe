@@ -36,13 +36,10 @@ public class RoomsFragment extends Fragment {
         data.add("A");
         data.add("B");
         data.add("C");
+        data.add("DLKJD");
 
-        /*ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
-                android.R.layout.simple_list_item_1, data);
-        setListAdapter(adapter);*/
 
         mViewModel = new ViewModelProvider(this).get(RoomsViewModel.class);
-        changingRooms = mViewModel.getRoomsList();
 
         mViewModel.getRooms().observe(getViewLifecycleOwner(), rooms -> {
                     binding.roomsRecyclerView.setAdapter(
@@ -51,15 +48,10 @@ public class RoomsFragment extends Fragment {
                                     rooms.stream().map(Rooms::getNameRoom).collect(toList())
                             )
                     );
+            //Toast.makeText(getContext(), rooms.stream().map(Rooms::getNameRoom).collect(toList()).toString(), Toast.LENGTH_SHORT).show();
                 }
         );
 
-        /*mViewModel.getRooms().observe(getViewLifecycleOwner(), rooms -> {
-            Toast.makeText(getContext(), rooms.stream().map(Rooms::getNameRoom).collect(toList()).toString(), Toast.LENGTH_SHORT).show();
-                }
-        );*/
-
-        //Toast.makeText(getContext(), mViewModel.getRooms().toString(), Toast.LENGTH_SHORT).show();
 
 
     }
@@ -73,6 +65,7 @@ public class RoomsFragment extends Fragment {
         binding.roomsRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         //return inflater.inflate(R.layout.fragment_rooms, null);
+
 
         return v;
     }

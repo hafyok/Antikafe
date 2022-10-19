@@ -21,8 +21,7 @@ public class RoomsRepository {
         mRoomsDao = db.roomSDAO();
         mAllRoomS = mRoomsDao.getAll();
 
-        /*Toast.makeText(context, mAllRoomS.toString(), Toast.LENGTH_LONG).show();
-        Toast.makeText(context, "Проверка", Toast.LENGTH_LONG).show();*/
+        //Toast.makeText(context, mAllRoomS.toString(), Toast.LENGTH_LONG).show();
 
     }
 

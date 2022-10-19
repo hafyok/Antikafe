@@ -39,8 +39,8 @@ public abstract class RoomsDatabase extends RoomDatabase {
             synchronized (RoomsDatabase.class){
                 if (instance == null){
                     instance = Room.databaseBuilder(context.getApplicationContext(),
-                                    RoomsDatabase.class,
-                                    "rooms_database.db")
+                            RoomsDatabase.class,
+                            "rooms_database.db")
                             .addCallback(new Callback(){
                                 @Override
                                 public void onCreate(@NonNull SupportSQLiteDatabase db){
@@ -55,7 +55,10 @@ public abstract class RoomsDatabase extends RoomDatabase {
                 }
             }
         }
+        //Toast.makeText(context, Arrays.stream(rooms).collect(Collectors.toList()).toString(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(context, instance.roomSDAO().getAll().toString(), Toast.LENGTH_LONG).show();
         return instance;
     }
 
 }
+//da5f263

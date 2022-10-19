@@ -12,7 +12,6 @@ import com.example.antikafe.adapters.viewHolders.RoomsViewHolder;
 import com.example.antikafe.databinding.RoomElementBinding;
 import com.example.antikafe.mvvm.views.RoomsFragment;
 
-
 import java.util.List;
 
 public class RoomsAdapter extends RecyclerView.Adapter<RoomsViewHolder> {
@@ -42,6 +41,7 @@ public class RoomsAdapter extends RecyclerView.Adapter<RoomsViewHolder> {
                 Toast.makeText(view.getContext(), "dismiss", Toast.LENGTH_LONG).show();
             }
         });
+
     }
 
     @Override
