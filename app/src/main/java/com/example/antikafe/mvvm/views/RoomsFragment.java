@@ -19,9 +19,6 @@ import com.example.antikafe.databinding.FragmentRoomsBinding;
 import com.example.antikafe.mvvm.models.Rooms;
 import com.example.antikafe.mvvm.viewModels.RoomsViewModel;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class RoomsFragment extends Fragment {
     private RoomsViewModel mViewModel;
@@ -32,11 +29,11 @@ public class RoomsFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        List<String> data = new ArrayList<String>();
+        /*List<String> data = new ArrayList<String>();
         data.add("A");
         data.add("B");
         data.add("C");
-        data.add("DLKJD");
+        data.add("DLKJD");*/
 
 
         mViewModel = new ViewModelProvider(this).get(RoomsViewModel.class);
